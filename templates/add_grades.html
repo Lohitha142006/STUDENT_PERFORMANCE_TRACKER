@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Grades</title>
+
+    <style>
+        body{
+            background:#121826;
+            color:white;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        .container{
+            width:500px;
+            margin:60px auto;
+            background:#1e293b;
+            padding:30px;
+            border-radius:12px;
+        }
+
+        h2{
+            text-align:center;
+            color:#60a5fa;
+            margin-bottom:20px;
+        }
+
+        p{
+            margin-bottom:20px;
+        }
+
+        input{
+            width:100%;
+            padding:12px;
+            margin-top:8px;
+            margin-bottom:15px;
+            border:none;
+            border-radius:8px;
+            background:#334155;
+            color:white;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            background:#2563eb;
+            color:white;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#1d4ed8;
+        }
+
+        a{
+            color:#60a5fa;
+            text-decoration:none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Add Grades</h2>
+
+<p>
+Student:
+<b>{{student.name}}</b>
+</p>
+
+<form method="POST">
+
+<label>Subject:</label>
+<input type="text" name="subject" required>
+
+<label>Marks:</label>
+<input type="number" name="marks" min="0" max="100" required>
+
+<button type="submit">Save Grade</button>
+
+</form>
+
+<br>
+
+<a href="/">Back</a>
+
+</div>
+
+</body>
+</html>
